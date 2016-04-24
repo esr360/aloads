@@ -36,28 +36,28 @@ Steps
         animation: awd_steps_bottom 1s infinite linear reverse;
     }
 
+    @keyframes awd_steps_top {
+        0% {
+            margin-top: -12px;
+        }
+        50% {
+            margin-top: 12px;
+        }
+        100% {
+            margin-top: -12px;
+        }
+    }
+
+    @keyframes awd_steps_bottom {
+        0% {
+            margin-top: 12px;
+        }
+        50% {
+            margin-top: -12px;
+        }
+        100% {
+            margin-top: 12px;
+        }
+    }
+
 } // @mixin
-
-@keyframes awd_steps_top {
-    0% {
-        margin-top: -12px;
-    }
-    50% {
-        margin-top: 12px;
-    }
-    100% {
-        margin-top: -12px;
-    }
-}
-
-@keyframes awd_steps_bottom {
-    0% {
-        margin-top: 12px;
-    }
-    50% {
-        margin-top: -12px;
-    }
-    100% {
-        margin-top: 12px;
-    }
-}

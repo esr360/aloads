@@ -48,28 +48,28 @@ Newton Ball
         transform: translateX(0%);
         animation: awd_newton_right 1s 0s ease-out infinite
     }
+    
+    @keyframes awd_newton_left {
+        25% {
+            transform: translateX(-100%);
+            animation-timing-function: ease-in
+        }
+        50% {
+            transform: translateX(0%)
+        }
+    }
+
+    @keyframes awd_newton_right {
+        50% {
+            transform: translateX(0%)
+        }
+        75% {
+            transform: translateX(100%);
+            animation-timing-function: ease-in
+        }
+        100% {
+            transform: translateX(0%)
+        }
+    }
 
 } // @mixin
-
-@keyframes awd_newton_left {
-    25% {
-        transform: translateX(-100%);
-        animation-timing-function: ease-in
-    }
-    50% {
-        transform: translateX(0%)
-    }
-}
-
-@keyframes awd_newton_right {
-    50% {
-        transform: translateX(0%)
-    }
-    75% {
-        transform: translateX(100%);
-        animation-timing-function: ease-in
-    }
-    100% {
-        transform: translateX(0%)
-    }
-}

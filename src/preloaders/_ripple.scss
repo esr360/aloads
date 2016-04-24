@@ -42,18 +42,18 @@ Ripple
         animation: awd_ripple 1.25s 0s infinite cubic-bezier(0.21, 0.53, 0.56, 0.8);
     }
 
-} // @mixin
+    @keyframes awd_ripple {
+        0% {
+            transform: translate(-50%, -50%) scale(0.1);
+            opacity: 1;
+        }
+        70% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0.7;
+        }
+        100% {
+            opacity: 0.0;
+        }
+    }
 
-@keyframes awd_ripple {
-    0% {
-        transform: translate(-50%, -50%) scale(0.1);
-        opacity: 1;
-    }
-    70% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 0.7;
-    }
-    100% {
-        opacity: 0.0;
-    }
-}
+} // @mixin

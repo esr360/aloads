@@ -33,31 +33,31 @@ Spinning Disc
         animation: awd_disc 1.5s infinite linear;
     }
 
+    @keyframes awd_disc_rotate {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+            opacity: 0.6;
+        }
+        50% {
+            transform: translate(-50%, -50%) rotate(180deg);
+            opacity: 0.8;
+        }
+        100% {
+            transform: translate(-50%, -50%) rotate(360deg);
+            opacity: 0.6;
+        }
+    }
+
+    @keyframes awd_disc {
+        0% {
+            opacity: 0.8;
+        }
+        50% {
+            opacity: 0.6;
+        }
+        100% {
+            opacity: 0.8;
+        }
+    }
+
 } // @mixin
-
-@keyframes awd_disc_rotate {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg);
-        opacity: 0.6;
-    }
-    50% {
-        transform: translate(-50%, -50%) rotate(180deg);
-        opacity: 0.8;
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-        opacity: 0.6;
-    }
-}
-
-@keyframes awd_disc {
-    0% {
-        opacity: 0.8;
-    }
-    50% {
-        opacity: 0.6;
-    }
-    100% {
-        opacity: 0.8;
-    }
-}

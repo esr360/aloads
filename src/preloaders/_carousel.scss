@@ -67,16 +67,16 @@ Carousel
         animation-delay: -2s, -2.5s
     }
 
+    @keyframes awd_carousel_position {
+        50% {
+            left: 100%
+        }
+    }
+
+    @keyframes awd_carousel_size {
+        50% {
+            transform: scale(0.3, 0.3)
+        }
+    }
+
 } // @mixin
-
-@keyframes awd_carousel_position {
-    50% {
-        left: 100%
-    }
-}
-
-@keyframes awd_carousel_size {
-    50% {
-        transform: scale(0.3, 0.3)
-    }
-}
