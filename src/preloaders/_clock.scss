@@ -22,15 +22,7 @@ Clock
     border-top: 15px solid #ccc;
     margin: -16px 0 0 -1px;
     background: #666;
-    -webkit-animation: awd_clock 1s linear 0s infinite;
-    -moz-animation: awd_clock 1s linear 0s infinite;
-    -ms-animation: awd_clock 1s linear 0s infinite;
-    -o-animation: awd_clock 1s linear 0s infinite;
     animation: awd_clock 1s linear 0s infinite;
-    -webkit-transform-origin: center bottom;
-    -moz-transform-origin: center bottom;
-    -ms-transform-origin: center bottom;
-    -o-transform-origin: center bottom;
     transform-origin: center bottom;
 }
 
@@ -42,43 +34,8 @@ Clock
     border-top: 11px solid #888;
     margin: -12px 0 0 -1px;
     background: #666;
-    -webkit-animation: awd_clock 6s linear 0s infinite;
-    -moz-animation: awd_clock 6s linear 0s infinite;
-    -ms-animation: awd_clock 6s linear 0s infinite;
-    -o-animation: awd_clock 6s linear 0s infinite;
     animation: awd_clock 6s linear 0s infinite;
-    -webkit-transform-origin: center bottom;
-    -moz-transform-origin: center bottom;
-    -ms-transform-origin: center bottom;
-    -o-transform-origin: center bottom;
     transform-origin: center bottom;
-}
-
-@-webkit-keyframes awd_clock {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@-moz-keyframes awd_clock {
-    0% {
-        -moz-transform: rotate(0deg);
-    }
-    100% {
-        -moz-transform: rotate(360deg);
-    }
-}
-
-@-o-keyframes awd_clock {
-    0% {
-        -o-transform: rotate(0deg);
-    }
-    100% {
-        -o-transform: rotate(360deg);
-    }
 }
 
 @keyframes awd_clock {
