@@ -2,43 +2,47 @@
 Ripple
 ==================================================*/
 
-.awd_ripple {
-    backface-visibility: hidden;
-    perspective: 1000;
-    transform: translate(-50%, -50%) !important;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-}
+@mixin awd_ripple() {
+  
+    .awd_ripple {
+        backface-visibility: hidden;
+        perspective: 1000;
+        transform: translate(-50%, -50%) !important;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
 
-.awd_ripple > div:nth-child(0) {
-    animation-delay: -0.8s;
-}
+    .awd_ripple > div:nth-child(0) {
+        animation-delay: -0.8s;
+    }
 
-.awd_ripple > div:nth-child(1) {
-    animation-delay: -0.6s;
-}
+    .awd_ripple > div:nth-child(1) {
+        animation-delay: -0.6s;
+    }
 
-.awd_ripple > div:nth-child(2) {
-    animation-delay: -0.4s;
-}
+    .awd_ripple > div:nth-child(2) {
+        animation-delay: -0.4s;
+    }
 
-.awd_ripple > div:nth-child(3) {
-    animation-delay: -0.2s;
-}
+    .awd_ripple > div:nth-child(3) {
+        animation-delay: -0.2s;
+    }
 
-.awd_ripple > div {
-    animation-fill-mode: both;
-    position: absolute;
-    transform: translate(-50%, -50%) !important;
-    left: 50%;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    border: 2px solid #666666;
-    animation: awd_ripple 1.25s 0s infinite cubic-bezier(0.21, 0.53, 0.56, 0.8);
-}
+    .awd_ripple > div {
+        animation-fill-mode: both;
+        position: absolute;
+        transform: translate(-50%, -50%) !important;
+        left: 50%;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: 2px solid #666666;
+        animation: awd_ripple 1.25s 0s infinite cubic-bezier(0.21, 0.53, 0.56, 0.8);
+    }
+
+} // @mixin
 
 @keyframes awd_ripple {
     0% {

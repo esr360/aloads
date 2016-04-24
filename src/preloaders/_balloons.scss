@@ -2,47 +2,51 @@
 Balloons
 ==================================================*/
 
-.awd_balloons {
-    position: absolute;
-    top: calc(50% - 20px);
-    left: calc(50% - 20px);
-    width: 40px;
-    height: 40px;
-    animation: awd_balloons 5s infinite linear;
-}
+@mixin awd_balloons() {
 
-.awd_balloons > div {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    position: absolute;
-    background: #666;
-    display: block;
-    animation: awd_balloons 1s infinite linear;
-}
+    .awd_balloons {
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 20px);
+        width: 40px;
+        height: 40px;
+        animation: awd_balloons 5s infinite linear;
+    }
 
-.awd_balloons > div:nth-child(1) {
-    opacity: 0.5;
-}
+    .awd_balloons > div {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        background: #666;
+        display: block;
+        animation: awd_balloons 1s infinite linear;
+    }
 
-.awd_balloons > div:nth-child(2) {
-    left: 22px;
-    animation-delay: .2s;
-    opacity: 0.4;
-}
+    .awd_balloons > div:nth-child(1) {
+        opacity: 0.5;
+    }
 
-.awd_balloons > div:nth-child(3) {
-    top: 22px;
-    animation-delay: .4s;
-    opacity: 0.5;
-}
+    .awd_balloons > div:nth-child(2) {
+        left: 22px;
+        animation-delay: .2s;
+        opacity: 0.4;
+    }
 
-.awd_balloons > div:nth-child(4) {
-    top: 22px;
-    left: 22px;
-    animation-delay: .6s;
-    opacity: 0.6;
-}
+    .awd_balloons > div:nth-child(3) {
+        top: 22px;
+        animation-delay: .4s;
+        opacity: 0.5;
+    }
+
+    .awd_balloons > div:nth-child(4) {
+        top: 22px;
+        left: 22px;
+        animation-delay: .6s;
+        opacity: 0.6;
+    }
+
+} // @mixin
 
 @keyframes awd_balloons {
     0% {

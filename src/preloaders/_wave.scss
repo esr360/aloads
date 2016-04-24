@@ -2,43 +2,47 @@
 Audio Wave
 ==================================================*/
 
-.awd_wave {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 62px;
-    left: 50%;
-    top: 50%;
-}
+@mixin awd_wave() {
+    
+    .awd_wave {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 62px;
+        left: 50%;
+        top: 50%;
+    }
 
-.awd_wave > div {
-    display: block;
-    bottom: 0px;
-    width: 9px;
-    height: 5px;
-    background: #666666;
-    position: absolute;
-    animation: awd_wave 1.5s infinite ease-in-out;
-}
+    .awd_wave > div {
+        display: block;
+        bottom: 0px;
+        width: 9px;
+        height: 5px;
+        background: #666666;
+        position: absolute;
+        animation: awd_wave 1.5s infinite ease-in-out;
+    }
 
-.awd_wave > div:nth-child(2) {
-    left: 11px;
-    animation-delay: .2s;
-}
+    .awd_wave > div:nth-child(2) {
+        left: 11px;
+        animation-delay: .2s;
+    }
 
-.awd_wave > div:nth-child(3) {
-    left: 22px;
-    animation-delay: .4s;
-}
+    .awd_wave > div:nth-child(3) {
+        left: 22px;
+        animation-delay: .4s;
+    }
 
-.awd_wave > div:nth-child(4) {
-    left: 33px;
-    animation-delay: .6s;
-}
+    .awd_wave > div:nth-child(4) {
+        left: 33px;
+        animation-delay: .6s;
+    }
 
-.awd_wave > div:nth-child(5) {
-    left: 44px;
-    animation-delay: .8s;
-}
+    .awd_wave > div:nth-child(5) {
+        left: 44px;
+        animation-delay: .8s;
+    }
+
+} // @mixin
 
 @keyframes awd_wave {
     0% {

@@ -2,50 +2,54 @@
 Newton Ball
 ==================================================*/
 
-.awd_newton,
-.awd_newton > div {
-    position: relative;
-    box-sizing: border-box
-}
+@mixin awd_newton() {
+  
+    .awd_newton,
+    .awd_newton > div {
+        position: relative;
+        box-sizing: border-box
+    }
 
-.awd_newton {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    display: block;
-    font-size: 0;
-    color: #666666;
-}
+    .awd_newton {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        display: block;
+        font-size: 0;
+        color: #666666;
+    }
 
-.awd_newton > div {
-    display: inline-block;
-    float: none;
-    background-color: currentColor;
-    border: 0 solid currentColor
-}
+    .awd_newton > div {
+        display: inline-block;
+        float: none;
+        background-color: currentColor;
+        border: 0 solid currentColor
+    }
 
-.awd_newton {
-    width: 40px;
-    height: 10px
-}
+    .awd_newton {
+        width: 40px;
+        height: 10px
+    }
 
-.awd_newton > div {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    opacity: 0.8;
-}
+    .awd_newton > div {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        opacity: 0.8;
+    }
 
-.awd_newton > div:first-child {
-    transform: translateX(0%);
-    animation: awd_newton_left 1s 0s ease-out infinite
-}
+    .awd_newton > div:first-child {
+        transform: translateX(0%);
+        animation: awd_newton_left 1s 0s ease-out infinite
+    }
 
-.awd_newton > div:last-child {
-    transform: translateX(0%);
-    animation: awd_newton_right 1s 0s ease-out infinite
-}
+    .awd_newton > div:last-child {
+        transform: translateX(0%);
+        animation: awd_newton_right 1s 0s ease-out infinite
+    }
+
+} // @mixin
 
 @keyframes awd_newton_left {
     25% {

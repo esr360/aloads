@@ -2,15 +2,50 @@
 Hourglass
 ==================================================*/
 
-.awd_hourglass {
-    height: 40px;
-    width: 41px;
-    position: absolute;
-    top: calc(50% - 20px);
-    left: calc(50% - 20px);
-    opacity: 0.8;
-    animation: awd_hourglass 5s cubic-bezier(.8, 0, .2, 1) infinite;
-}
+@mixin awd_hourglass() {
+    
+    .awd_hourglass {
+        height: 40px;
+        width: 41px;
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 20px);
+        opacity: 0.8;
+        animation: awd_hourglass 5s cubic-bezier(.8, 0, .2, 1) infinite;
+    }
+
+    .awd_hourglass > div:nth-child(1) {
+        border-top: 20px solid #666;
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        height: 0px;
+        width: 1px;
+        transform-origin: 50% 100%;
+        animation: awd_hourglass_top 5s linear infinite;
+    }
+
+    .awd_hourglass > div:nth-child(2) {
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #666;
+        border-left: 20px solid transparent;
+        height: 0px;
+        width: 1px;
+        transform: scale(0);
+        transform-origin: 50% 100%;
+        animation: awd_hourglass_bottom 5s linear infinite;
+    }
+
+    .awd_hourglass > div:nth-child(3) {
+        border-left: 1px dotted #666;
+        height: 0px;
+        width: 0px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        animation: awd_hourglass_line 5s linear infinite;
+    }
+
+} // @mixin
 
 @keyframes awd_hourglass {
     90% {
@@ -21,16 +56,6 @@ Hourglass
     }
 }
 
-.awd_hourglass > div:nth-child(1) {
-    border-top: 20px solid #666;
-    border-right: 20px solid transparent;
-    border-left: 20px solid transparent;
-    height: 0px;
-    width: 1px;
-    transform-origin: 50% 100%;
-    animation: awd_hourglass_top 5s linear infinite;
-}
-
 @keyframes awd_hourglass_top {
     90% {
         transform: scale(0);
@@ -38,17 +63,6 @@ Hourglass
     100% {
         transform: scale(0);
     }
-}
-
-.awd_hourglass > div:nth-child(2) {
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #666;
-    border-left: 20px solid transparent;
-    height: 0px;
-    width: 1px;
-    transform: scale(0);
-    transform-origin: 50% 100%;
-    animation: awd_hourglass_bottom 5s linear infinite;
 }
 
 @keyframes awd_hourglass_bottom {
@@ -61,16 +75,6 @@ Hourglass
     100% {
         transform: scale(1);
     }
-}
-
-.awd_hourglass > div:nth-child(3) {
-    border-left: 1px dotted #666;
-    height: 0px;
-    width: 0px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    animation: awd_hourglass_line 5s linear infinite;
 }
 
 @keyframes awd_hourglass_line {

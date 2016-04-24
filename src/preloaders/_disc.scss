@@ -2,34 +2,38 @@
 Spinning Disc
 ==================================================*/
 
-.awd_disc {
-    backface-visibility: hidden;
-    perspective: 1000;
-    transform: translate(-50%, -50%) !important;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 20px;
-    height: 20px;
-    background: #666666;
-    border-radius: 50px;
-    animation: awd_disc_rotate 1.5s infinite linear;
-}
+@mixin awd_disc() {
+    
+    .awd_disc {
+        backface-visibility: hidden;
+        perspective: 1000;
+        transform: translate(-50%, -50%) !important;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        background: #666666;
+        border-radius: 50px;
+        animation: awd_disc_rotate 1.5s infinite linear;
+    }
 
-.awd_disc > div {
-    position: absolute;
-    transform: translate(-50%, -50%) rotate(0deg);
-    left: 50%;
-    top: 50%;
-    width: 40px;
-    height: 40px;
-    border-top: 5px solid #666666;
-    border-bottom: 5px solid #666666;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-radius: 50%;
-    animation: awd_disc 1.5s infinite linear;
-}
+    .awd_disc > div {
+        position: absolute;
+        transform: translate(-50%, -50%) rotate(0deg);
+        left: 50%;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        border-top: 5px solid #666666;
+        border-bottom: 5px solid #666666;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-radius: 50%;
+        animation: awd_disc 1.5s infinite linear;
+    }
+
+} // @mixin
 
 @keyframes awd_disc_rotate {
     0% {

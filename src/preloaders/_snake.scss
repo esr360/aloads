@@ -2,44 +2,48 @@
 Snake
 ==================================================*/
 
-.awd_snake {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 62px;
-    left: 50%;
-    top: 50%;
-}
+@mixin awd_snake() {
+  
+    .awd_snake {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 62px;
+        left: 50%;
+        top: 50%;
+    }
 
-.awd_snake > div {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: #666666;
-    opacity: 0.5;
-    border-radius: 20px;
-    animation: awd_snake 1s infinite ease-in-out;
+    .awd_snake > div {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #666666;
+        opacity: 0.5;
+        border-radius: 20px;
+        animation: awd_snake 1s infinite ease-in-out;
 
-}
+    }
 
-.awd_snake > div:nth-child(2) {
-    left: 13px;
-    animation-delay: .2s;
-}
+    .awd_snake > div:nth-child(2) {
+        left: 13px;
+        animation-delay: .2s;
+    }
 
-.awd_snake > div:nth-child(3) {
-    left: 26px;
-    animation-delay: .4s;
-}
+    .awd_snake > div:nth-child(3) {
+        left: 26px;
+        animation-delay: .4s;
+    }
 
-.awd_snake > div:nth-child(4) {
-    left: 39px;
-    animation-delay: .6s;
-}
+    .awd_snake > div:nth-child(4) {
+        left: 39px;
+        animation-delay: .6s;
+    }
 
-.awd_snake > div:nth-child(5) {
-    left: 52px;
-    animation-delay: .8s;
-}
+    .awd_snake > div:nth-child(5) {
+        left: 52px;
+        animation-delay: .8s;
+    }
+
+} // @mixin
 
 @keyframes awd_snake {
     0% {

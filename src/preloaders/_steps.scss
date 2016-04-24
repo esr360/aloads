@@ -2,37 +2,41 @@
 Steps
 ==================================================*/
 
-.awd_steps {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    display: block;
-    font-size: 0;
-}
+@mixin awd_steps() {
+  
+    .awd_steps {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        display: block;
+        font-size: 0;
+    }
 
-.awd_steps {
-    width: 50px;
-    height: 50px;
-}
+    .awd_steps {
+        width: 50px;
+        height: 50px;
+    }
 
-.awd_steps > div {
-    float: left;
-    width: 50%;
-    height: 100%;
-    position: relative;
-    background-color: #666666;
-}
+    .awd_steps > div {
+        float: left;
+        width: 50%;
+        height: 100%;
+        position: relative;
+        background-color: #666666;
+    }
 
-.awd_steps > div:first-child {
-    margin-top: -12px;
-    animation: awd_steps_top 1s infinite linear reverse;
-}
+    .awd_steps > div:first-child {
+        margin-top: -12px;
+        animation: awd_steps_top 1s infinite linear reverse;
+    }
 
-.awd_steps > div:last-child {
-    margin-top: 12px;
-    animation: awd_steps_bottom 1s infinite linear reverse;
-}
+    .awd_steps > div:last-child {
+        margin-top: 12px;
+        animation: awd_steps_bottom 1s infinite linear reverse;
+    }
+
+} // @mixin
 
 @keyframes awd_steps_top {
     0% {

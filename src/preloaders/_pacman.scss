@@ -2,80 +2,84 @@
 Pacman
 ==================================================*/
 
-.awd_pacman,
-.awd_pacman > div {
-    position: relative;
-    box-sizing: border-box
-}
+@mixin awd_pacman() {
+  
+    .awd_pacman,
+    .awd_pacman > div {
+        position: relative;
+        box-sizing: border-box
+    }
 
-.awd_pacman {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    display: block;
-    font-size: 0;
-    color: #666666;
-}
+    .awd_pacman {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        display: block;
+        font-size: 0;
+        color: #666666;
+    }
 
-.awd_pacman > div {
-    display: inline-block;
-    float: none;
-    background-color: currentColor;
-    border: 0 solid currentColor;
-}
+    .awd_pacman > div {
+        display: inline-block;
+        float: none;
+        background-color: currentColor;
+        border: 0 solid currentColor;
+    }
 
-.awd_pacman {
-    width: 32px;
-    height: 32px
-}
+    .awd_pacman {
+        width: 32px;
+        height: 32px
+    }
 
-.awd_pacman > div:nth-child(1),
-.awd_pacman > div:nth-child(2) {
-    width: 0;
-    height: 0;
-    background: transparent;
-    border-style: solid;
-    border-width: 16px;
-    border-right-color: transparent;
-    border-radius: 100%;
-    animation: awd_pacman_up 0.5s 0s infinite
-}
+    .awd_pacman > div:nth-child(1),
+    .awd_pacman > div:nth-child(2) {
+        width: 0;
+        height: 0;
+        background: transparent;
+        border-style: solid;
+        border-width: 16px;
+        border-right-color: transparent;
+        border-radius: 100%;
+        animation: awd_pacman_up 0.5s 0s infinite
+    }
 
-.awd_pacman > div:nth-child(2) {
-    margin-top: -32px;
-    animation-name: awd_pacman_down
-}
+    .awd_pacman > div:nth-child(2) {
+        margin-top: -32px;
+        animation-name: awd_pacman_down
+    }
 
-.awd_pacman > div:nth-child(3),
-.awd_pacman > div:nth-child(4),
-.awd_pacman > div:nth-child(5),
-.awd_pacman > div:nth-child(6) {
-    position: absolute;
-    top: 50%;
-    left: 200%;
-    width: 8px;
-    height: 8px;
-    border-radius: 100%;
-    opacity: 0;
-    animation: awd_pacman_balls 2s 0s infinite linear
-}
+    .awd_pacman > div:nth-child(3),
+    .awd_pacman > div:nth-child(4),
+    .awd_pacman > div:nth-child(5),
+    .awd_pacman > div:nth-child(6) {
+        position: absolute;
+        top: 50%;
+        left: 200%;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        opacity: 0;
+        animation: awd_pacman_balls 2s 0s infinite linear
+    }
 
-.awd_pacman > div:nth-child(3) {
-    animation-delay: -1.44s
-}
+    .awd_pacman > div:nth-child(3) {
+        animation-delay: -1.44s
+    }
 
-.awd_pacman > div:nth-child(4) {
-    animation-delay: -1.94s
-}
+    .awd_pacman > div:nth-child(4) {
+        animation-delay: -1.94s
+    }
 
-.awd_pacman > div:nth-child(5) {
-    animation-delay: -2.44s
-}
+    .awd_pacman > div:nth-child(5) {
+        animation-delay: -2.44s
+    }
 
-.awd_pacman > div:nth-child(6) {
-    animation-delay: -2.94s
-}
+    .awd_pacman > div:nth-child(6) {
+        animation-delay: -2.94s
+    }
+
+} // @mixin
 
 @keyframes awd_pacman_up {
     0%, 100% {

@@ -2,68 +2,72 @@
 Carousel
 ==================================================*/
 
-.awd_carousel {
-    position: absolute;
-    top: calc(50% - 8px);
-    left: calc(50% - 8px);
-}
+@mixin awd_carousel() {
+    
+    .awd_carousel {
+        position: absolute;
+        top: calc(50% - 8px);
+        left: calc(50% - 8px);
+    }
 
-.awd_carousel > div {
-    position: relative;
-    box-sizing: content-box;
-    color: #666;
-    background: #666;
-    border-color: #666;
-    border-style: solid;
-    border-width: 0
-}
+    .awd_carousel > div {
+        position: relative;
+        box-sizing: content-box;
+        color: #666;
+        background: #666;
+        border-color: #666;
+        border-style: solid;
+        border-width: 0
+    }
 
-.awd_carousel:after {
-    display: table;
-    line-height: 0;
-    clear: both;
-    content: ""
-}
+    .awd_carousel:after {
+        display: table;
+        line-height: 0;
+        clear: both;
+        content: ""
+    }
 
-.awd_carousel {
-    width: 16px;
-    height: 16px
-}
+    .awd_carousel {
+        width: 16px;
+        height: 16px
+    }
 
-.awd_carousel > div {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    display: block;
-    width: 16px;
-    height: 16px;
-    float: left;
-    border-radius: 100%;
-    opacity: .5;
-    animation: 
-        awd_carousel_position 2.5s infinite cubic-bezier(0.25, 0, 0.75, 1), 
-        awd_carousel_size 2.5s infinite cubic-bezier(0.25, 0, 0.75, 1)
-}
+    .awd_carousel > div {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        display: block;
+        width: 16px;
+        height: 16px;
+        float: left;
+        border-radius: 100%;
+        opacity: .5;
+        animation: 
+            awd_carousel_position 2.5s infinite cubic-bezier(0.25, 0, 0.75, 1), 
+            awd_carousel_size 2.5s infinite cubic-bezier(0.25, 0, 0.75, 1)
+    }
 
-.awd_carousel > div:nth-child(1) {
-    animation-delay: 0s, -.5s
-}
+    .awd_carousel > div:nth-child(1) {
+        animation-delay: 0s, -.5s
+    }
 
-.awd_carousel > div:nth-child(2) {
-    animation-delay: -.5s, -1s
-}
+    .awd_carousel > div:nth-child(2) {
+        animation-delay: -.5s, -1s
+    }
 
-.awd_carousel > div:nth-child(3) {
-    animation-delay: -1s, -1.5s
-}
+    .awd_carousel > div:nth-child(3) {
+        animation-delay: -1s, -1.5s
+    }
 
-.awd_carousel > div:nth-child(4) {
-    animation-delay: -1.5s, -2s
-}
+    .awd_carousel > div:nth-child(4) {
+        animation-delay: -1.5s, -2s
+    }
 
-.awd_carousel > div:nth-child(5) {
-    animation-delay: -2s, -2.5s
-}
+    .awd_carousel > div:nth-child(5) {
+        animation-delay: -2s, -2.5s
+    }
+
+} // @mixin
 
 @keyframes awd_carousel_position {
     50% {
