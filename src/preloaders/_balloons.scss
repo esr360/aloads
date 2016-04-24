@@ -1,0 +1,112 @@
+/*==================================================
+Balloons
+==================================================*/
+
+.awd_balloons {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    -webkit-animation: awd_balloons 5s infinite linear;
+    -moz-animation: awd_balloons 5s infinite linear;
+    -ms-animation: awd_balloons 5s infinite linear;
+    -o-animation: awd_balloons 5s infinite linear;
+    animation: awd_balloons 5s infinite linear;
+}
+
+.awd_balloons > div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: #666;
+    display: block;
+    -webkit-animation: awd_balloons 1s infinite linear;
+    -moz-animation: awd_balloons 1s infinite linear;
+    -ms-animation: awd_balloons 1s infinite linear;
+    -o-animation: awd_balloons 1s infinite linear;
+    animation: awd_balloons 1s infinite linear;
+}
+
+.awd_balloons > div:nth-child(1) {
+    opacity: 0.5;
+}
+
+.awd_balloons > div:nth-child(2) {
+    left: 22px;
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -ms-animation-delay: .2s;
+    -o-animation-delay: .2s;
+    animation-delay: .2s;
+    opacity: 0.4;
+}
+
+.awd_balloons > div:nth-child(3) {
+    top: 22px;
+    -webkit-animation-delay: .4s;
+    -moz-animation-delay: .4s;
+    -ms-animation-delay: .4s;
+    -o-animation-delay: .4s;
+    animation-delay: .4s;
+    opacity: 0.5;
+}
+
+.awd_balloons > div:nth-child(4) {
+    top: 22px;
+    left: 22px;
+    -webkit-animation-delay: .6s;
+    -moz-animation-delay: .6s;
+    -ms-animation-delay: .6s;
+    -o-animation-delay: .6s;
+    animation-delay: .6s;
+    opacity: 0.6;
+}
+
+@-webkit-keyframes awd_balloons {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@-moz-keyframes awd_balloons {
+    0% {
+        -moz-transform: scale(1);
+    }
+    50% {
+        -moz-transform: scale(0.5);
+    }
+    100% {
+        -moz-transform: scale(1);
+    }
+}
+
+@-o-keyframes awd_balloons {
+    0% {
+        -o-transform: scale(1);
+    }
+    50% {
+        -o-transform: scale(0.5);
+    }
+    100% {
+        -o-transform: scale(1);
+    }
+}
+
+@keyframes awd_balloons {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }

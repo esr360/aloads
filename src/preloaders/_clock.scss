@@ -1,0 +1,91 @@
+/*==================================================
+Clock
+==================================================*/
+
+.awd_clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 36px;
+    height: 36px;
+    margin: -20px 0 0 -20px;
+    border: 2px solid #666;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+.awd_clock > div:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-top: 15px solid #ccc;
+    margin: -16px 0 0 -1px;
+    background: #666;
+    -webkit-animation: awd_clock 1s linear 0s infinite;
+    -moz-animation: awd_clock 1s linear 0s infinite;
+    -ms-animation: awd_clock 1s linear 0s infinite;
+    -o-animation: awd_clock 1s linear 0s infinite;
+    animation: awd_clock 1s linear 0s infinite;
+    -webkit-transform-origin: center bottom;
+    -moz-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    -o-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+
+.awd_clock > div:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-top: 11px solid #888;
+    margin: -12px 0 0 -1px;
+    background: #666;
+    -webkit-animation: awd_clock 6s linear 0s infinite;
+    -moz-animation: awd_clock 6s linear 0s infinite;
+    -ms-animation: awd_clock 6s linear 0s infinite;
+    -o-animation: awd_clock 6s linear 0s infinite;
+    animation: awd_clock 6s linear 0s infinite;
+    -webkit-transform-origin: center bottom;
+    -moz-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    -o-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+
+@-webkit-keyframes awd_clock {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes awd_clock {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes awd_clock {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@keyframes awd_clock {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

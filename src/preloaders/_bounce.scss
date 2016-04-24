@@ -1,0 +1,91 @@
+/*==================================================
+Bounce
+==================================================*/
+
+.awd_bounce {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.awd_bounce > div {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -moz-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    -o-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.awd_bounce > div > div {
+    width: 40px;
+    height: 40px;
+    margin: 100px auto;
+    background-color: #666666;
+    border-radius: 100%;
+    -webkit-animation: awd_bounce 1s infinite ease-in-out;
+    -moz-animation: awd_bounce 1s infinite ease-in-out;
+    -ms-animation: awd_bounce 1s infinite ease-in-out;
+    -o-animation: awd_bounce 1s infinite ease-in-out;
+    animation: awd_bounce 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes awd_bounce {
+    0% {
+        -webkit-transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes awd_bounce {
+    0% {
+        -moz-transform: scale(0);
+    }
+    100% {
+        -moz-transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@-o-keyframes awd_bounce {
+    0% {
+        -o-transform: scale(0);
+    }
+    100% {
+        -o-transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes awd_bounce {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}

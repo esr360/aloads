@@ -1,0 +1,181 @@
+/*==================================================
+Newton Ball
+==================================================*/
+
+.awd_newton,
+.awd_newton > div {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.awd_newton {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    display: block;
+    font-size: 0;
+    color: #666666;
+}
+
+.awd_newton > div {
+    display: inline-block;
+    float: none;
+    background-color: currentColor;
+    border: 0 solid currentColor
+}
+
+.awd_newton {
+    width: 40px;
+    height: 10px
+}
+
+.awd_newton > div {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    opacity: 0.8;
+}
+
+.awd_newton > div:first-child {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-animation: awd_newton_left 1s 0s ease-out infinite;
+    -moz-animation: awd_newton_left 1s 0s ease-out infinite;
+    -o-animation: awd_newton_left 1s 0s ease-out infinite;
+    animation: awd_newton_left 1s 0s ease-out infinite
+}
+
+.awd_newton > div:last-child {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-animation: awd_newton_right 1s 0s ease-out infinite;
+    -moz-animation: awd_newton_right 1s 0s ease-out infinite;
+    -o-animation: awd_newton_right 1s 0s ease-out infinite;
+    animation: awd_newton_right 1s 0s ease-out infinite
+}
+
+@-webkit-keyframes awd_newton_left {
+    25% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+    50% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+}
+
+@-moz-keyframes awd_newton_left {
+    25% {
+        -moz-transform: translateX(-100%);
+        transform: translateX(-100%);
+        -moz-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+    50% {
+        -moz-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+}
+
+@-o-keyframes awd_newton_left {
+    25% {
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+        -o-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+    50% {
+        -o-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+}
+
+@keyframes awd_newton_left {
+    25% {
+        transform: translateX(-100%);
+        animation-timing-function: ease-in
+    }
+    50% {
+        transform: translateX(0%)
+    }
+}
+
+@-webkit-keyframes awd_newton_right {
+    50% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+    75% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+}
+
+@-moz-keyframes awd_newton_right {
+    50% {
+        -moz-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+    75% {
+        -moz-transform: translateX(100%);
+        transform: translateX(100%);
+        -moz-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+    100% {
+        -moz-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+}
+
+@-o-keyframes awd_newton_right {
+    50% {
+        -o-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+    75% {
+        -o-transform: translateX(100%);
+        transform: translateX(100%);
+        -o-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+    100% {
+        -o-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+}
+
+@keyframes awd_newton_right {
+    50% {
+        transform: translateX(0%)
+    }
+    75% {
+        transform: translateX(100%);
+        animation-timing-function: ease-in
+    }
+    100% {
+        transform: translateX(0%)
+    }
+}

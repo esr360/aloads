@@ -1,0 +1,138 @@
+/*==================================================
+Carousel
+==================================================*/
+
+.awd_carousel {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 8px);
+}
+
+.awd_carousel > div {
+    position: relative;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #666;
+    background: #666;
+    border-color: #666;
+    border-style: solid;
+    border-width: 0
+}
+
+.awd_carousel:after {
+    display: table;
+    line-height: 0;
+    clear: both;
+    content: ""
+}
+
+.awd_carousel {
+    width: 16px;
+    height: 16px
+}
+
+.awd_carousel > div {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: block;
+    width: 16px;
+    height: 16px;
+    float: left;
+    border-radius: 100%;
+    opacity: .5;
+    -webkit-animation: awd_carousel_position 2.5s infinite cubic-bezier(0.25, 0, 0.75, 1), awd_carousel_size 2.5s infinite cubic-bezier(0.25, 0, 0.75, 1);
+    -moz-animation: awd_carousel_position 2.5s infinite cubic-bezier(0.25, 0, 0.75, 1), awd_carousel_size 2.5s infinite cubic-bezier(0.25, 0, 0.75, 1);
+    -ms-animation: awd_carousel_position 2.5s infinite cubic-bezier(0.25, 0, 0.75, 1), awd_carousel_size 2.5s infinite cubic-bezier(0.25, 0, 0.75, 1);
+    -o-animation: awd_carousel_position 2.5s infinite cubic-bezier(0.25, 0, 0.75, 1), awd_carousel_size 2.5s infinite cubic-bezier(0.25, 0, 0.75, 1);
+    animation: awd_carousel_position 2.5s infinite cubic-bezier(0.25, 0, 0.75, 1), awd_carousel_size 2.5s infinite cubic-bezier(0.25, 0, 0.75, 1)
+}
+
+.awd_carousel > div:nth-child(1) {
+    -webkit-animation-delay: 0s, -.5s;
+    -moz-animation-delay: 0s, -.5s;
+    -ms-animation-delay: 0s, -.5s;
+    -o-animation-delay: 0s, -.5s;
+    animation-delay: 0s, -.5s
+}
+
+.awd_carousel > div:nth-child(2) {
+    -webkit-animation-delay: -.5s, -1s;
+    -moz-animation-delay: -.5s, -1s;
+    -ms-animation-delay: -.5s, -1s;
+    -o-animation-delay: -.5s, -1s;
+    animation-delay: -.5s, -1s
+}
+
+.awd_carousel > div:nth-child(3) {
+    -webkit-animation-delay: -1s, -1.5s;
+    -moz-animation-delay: -1s, -1.5s;
+    -ms-animation-delay: -1s, -1.5s;
+    -o-animation-delay: -1s, -1.5s;
+    animation-delay: -1s, -1.5s
+}
+
+.awd_carousel > div:nth-child(4) {
+    -webkit-animation-delay: -1.5s, -2s;
+    -moz-animation-delay: -1.5s, -2s;
+    -ms-animation-delay: -1.5s, -2s;
+    -o-animation-delay: -1.5s, -2s;
+    animation-delay: -1.5s, -2s
+}
+
+.awd_carousel > div:nth-child(5) {
+    -webkit-animation-delay: -2s, -2.5s;
+    -moz-animation-delay: -2s, -2.5s;
+    -ms-animation-delay: -2s, -2.5s;
+    -o-animation-delay: -2s, -2.5s;
+    animation-delay: -2s, -2.5s
+}
+
+@-webkit-keyframes awd_carousel_position {
+    50% {
+        left: 100%
+    }
+}
+
+@-moz-keyframes awd_carousel_position {
+    50% {
+        left: 100%
+    }
+}
+
+@-o-keyframes awd_carousel_position {
+    50% {
+        left: 100%
+    }
+}
+
+@keyframes awd_carousel_position {
+    50% {
+        left: 100%
+    }
+}
+
+@-webkit-keyframes awd_carousel_size {
+    50% {
+        -webkit-transform: scale(0.3, 0.3);
+    }
+}
+
+@-moz-keyframes awd_carousel_size {
+    50% {
+        -moz-transform: scale(0.3, 0.3);
+    }
+}
+
+@-o-keyframes awd_carousel_size {
+    50% {
+        -o-transform: scale(0.3, 0.3);
+    }
+}
+
+@keyframes awd_carousel_size {
+    50% {
+        transform: scale(0.3, 0.3)
+    }
+}
